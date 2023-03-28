@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sec1 {
+  margin: 10px;
+  border: 1px solid black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.box {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.box:hover {
+  animation-fill-mode: forwards;
+}
+span {
+  display: none;
+}
+.box:hover span {
+  display: block;
+  color: white;
+}
+.box:hover h4 {
+  display: none;
+}
+.box:nth-child(1) {
+  background-color: rgb(227, 15, 15);
+}
+.box:nth-child(1):hover {
+  animation-name: scale;
+  animation-duration: 2s;
+}
+.box:nth-child(2) {
+  background-color: rgb(21, 113, 21);
+}
+.box:nth-child(2):hover {
+  animation-name: translate;
+  animation-duration: 2s;
+}
+.box:nth-child(3) {
+  background-color: rgb(97, 25, 164);
+}
+.box:nth-child(3):hover {
+  animation-name: rotate;
+  animation-duration: 1s;
+}
+.box:nth-child(4) {
+  background-color: rgb(175, 175, 9);
+}
+.box:nth-child(4):hover {
+  animation-name: skew;
+  animation-duration: 2s;
+}
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes translate {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(70px, -70px);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes skew {
+  from {
+    transform: skew(0);
+  }
+  to {
+    transform: skew(10deg, 0);
+  }
+}
+.sec2 {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.earth {
+  width: 200px;
+  position: fixed;
+  animation-name: rotate2;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+.moon {
+  width: 100px;
+  margin: 60px;
+  position: relative;
+  top: 180px;
+  left: 180px;
+}
+.rotate {
+  animation: rotatee 120s infinite linear;
+}
+@keyframes rotate2 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotatee {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
