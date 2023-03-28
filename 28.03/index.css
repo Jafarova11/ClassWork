@@ -104,9 +104,7 @@ span {
 .earth {
   width: 200px;
   position: fixed;
-  animation-name: rotate2;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
+  animation: rotate2 60s infinite linear;
 }
 .moon {
   width: 100px;
@@ -116,7 +114,7 @@ span {
   left: 180px;
 }
 .rotate {
-  animation: rotatee 120s infinite linear;
+  animation: rotatee 180s infinite linear;
 }
 @keyframes rotate2 {
   from {
