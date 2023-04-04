@@ -1,26 +1,26 @@
-header{
-    height: 80vh;
-    background-image: url(../images/header.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+header {
+  height: 80vh;
+  background-image: url(../images/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  nav {
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
     position: fixed;
     width: 100%;
-    nav{
-        background-color: rgb(245, 245, 245);
-        padding: 10px;
-        ul{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            li{
-                a{
-                    text-decoration: none;
-                    color: black;
-                    &:hover{
-                        border-bottom: 2px solid red;
-                    }
-                }
-            }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            border-bottom: 2px solid red;
+          }
         }
+      }
     }
+  }
 }

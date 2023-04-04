@@ -1,6 +1,62 @@
-.minion{
-    height: 100vh;
-    text-align: center;
-    h1{
+.minion {
+  max-width: 1300px;
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::after {
+      content: "";
+      display: block;
+      width: 150px;
+      border: 1px solid yellow;
+      margin-top: 5px;
     }
+  }
+  .mini {
+    gap: 10px;
+    .min {
+      flex-wrap: nowrap;
+      font-size: 28px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 150px;
+      border: transparent;
+      &:hover {
+        animation: rotate 2s;
+        border: 1px dashed black;
+        h4 {
+          display: none;
+        }
+      }
+      &:nth-child(odd) {
+        background-color: blueviolet;
+        &:hover {
+          background-image: url(../images/minion1.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+      &:nth-child(even) {
+        background-color: green;
+        &:hover {
+          background-image: url(../images/minion2.png);
+          background-size: cover;
+        }
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotateX(0deg);
+        }
+        50% {
+          transform: rotateX(90deg);
+        }
+        100% {
+          transform: rotateX(0deg);
+        }
+      }
+    }
+  }
 }

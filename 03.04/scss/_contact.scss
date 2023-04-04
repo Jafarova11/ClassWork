@@ -1,0 +1,43 @@
+.contact {
+  border: 1px solid black;
+  padding: 180px 80px;
+  .left {
+    position: relative;
+    h1 {
+      position: absolute;
+      top: 50px;
+      right: 200px;
+      font-size: 54px;
+      color: rgb(71, 71, 71);
+      font-weight: 700;
+    }
+  }
+  .right {
+    gap: 30px;
+    input {
+      border: 1px dashed rgb(82, 82, 82);
+      padding: 10px;
+      outline: none;
+      margin-bottom: 10px;
+    }
+    .number{
+        width: 325px;
+    }
+    select {
+      border: 1px dashed rgb(82, 82, 82);
+      padding: 10px;
+      outline: none;
+      color: rgb(82, 82, 82);
+    }
+    .profession{
+        width: 410px;
+        margin-bottom: 30px;
+    }
+    button {
+      padding: 15px 174px;
+      border: transparent;
+      background-color: rgb(238, 195, 55);
+      color: rgb(66, 66, 66);
+    }
+  }
+}

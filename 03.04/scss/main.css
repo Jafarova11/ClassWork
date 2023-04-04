@@ -10,12 +10,12 @@ header {
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-  width: 100%;
 }
 header nav {
   background-color: rgb(245, 245, 245);
   padding: 10px;
+  position: fixed;
+  width: 100%;
 }
 header nav ul {
   display: flex;
@@ -77,6 +77,108 @@ header nav ul li a:hover {
 }
 
 .minion {
-  height: 100vh;
-  text-align: center;
+  max-width: 1300px;
+}
+.minion h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.minion h1::after {
+  content: "";
+  display: block;
+  width: 150px;
+  border: 1px solid yellow;
+  margin-top: 5px;
+}
+.minion .mini {
+  gap: 10px;
+}
+.minion .mini .min {
+  flex-wrap: nowrap;
+  font-size: 28px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 150px;
+  border: transparent;
+}
+.minion .mini .min:hover {
+  animation: rotate 2s;
+  border: 1px dashed black;
+}
+.minion .mini .min:hover h4 {
+  display: none;
+}
+.minion .mini .min:nth-child(odd) {
+  background-color: blueviolet;
+}
+.minion .mini .min:nth-child(odd):hover {
+  background-image: url(../images/minion1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.minion .mini .min:nth-child(even) {
+  background-color: green;
+}
+.minion .mini .min:nth-child(even):hover {
+  background-image: url(../images/minion2.png);
+  background-size: cover;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.contact {
+  border: 1px solid black;
+  padding: 180px 80px;
+}
+.contact .left {
+  position: relative;
+}
+.contact .left h1 {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  font-size: 54px;
+  color: rgb(71, 71, 71);
+  font-weight: 700;
+}
+.contact .right {
+  gap: 30px;
+}
+.contact .right input {
+  border: 1px dashed rgb(82, 82, 82);
+  padding: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+.contact .right .number {
+  width: 325px;
+}
+.contact .right select {
+  border: 1px dashed rgb(82, 82, 82);
+  padding: 10px;
+  outline: none;
+  color: rgb(82, 82, 82);
+}
+.contact .right .profession {
+  width: 410px;
+  margin-bottom: 30px;
+}
+.contact .right button {
+  padding: 15px 174px;
+  border: transparent;
+  background-color: rgb(238, 195, 55);
+  color: rgb(66, 66, 66);
 }/*# sourceMappingURL=main.css.map */
