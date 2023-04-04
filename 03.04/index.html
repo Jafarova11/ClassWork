@@ -18,9 +18,11 @@
     <header id="header">
       <nav>
         <ul>
-          <a href="#header"
-            ><img src="./images/logo.png" width="150px" alt="logo"
-          /></a>
+          <li>
+            <a href="#header"
+              ><img src="./images/logo.png" width="150px" alt="logo"
+            /></a>
+          </li>
           <li><a href="#header">Academy</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#progress">Progress</a></li>
@@ -32,7 +34,7 @@
     <section class="about" id="about">
       <div class="mb-5">
         <h1>Why Code Academy?</h1>
-        <img src="./images/line.png" alt="50px" />
+        <img src="./images/line.png" alt="50px" class="linee" />
         <p class="mt-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
           dignissimos! Possimus maxime voluptatem quos iste quas ipsam
@@ -42,7 +44,7 @@
         </p>
       </div>
       <div class="row">
-        <div class="column col-6">
+        <div class="column col-12 col-md-6">
           <img src="./images/team.png" alt="work" />
           <div>
             <h3>Practical work</h3>
@@ -53,7 +55,7 @@
             </p>
           </div>
         </div>
-        <div class="column col-6">
+        <div class="column col-12 col-md-6">
           <img src="./images/team.png" alt="work" />
           <div>
             <h3>Practical work</h3>
@@ -64,7 +66,7 @@
             </p>
           </div>
         </div>
-        <div class="column col-6">
+        <div class="column col-12 col-md-6">
           <img src="./images/team.png" alt="work" />
           <div>
             <h3>Practical work</h3>
@@ -75,7 +77,7 @@
             </p>
           </div>
         </div>
-        <div class="column col-6">
+        <div class="column col-12 col-md-6">
           <img src="./images/team.png" alt="work" />
           <div>
             <h3>Practical work</h3>
@@ -95,35 +97,41 @@
     </section>
     <section id="ourteam" class="minion mt-5 mb-5">
       <h1 class="text-center">Minions</h1>
-      <div class="row mini">
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
-        <div class="col-2 col-md-4 min"><h4>Kevin the Minion</h4></div>
+      <div class="row">
+        <div class="row">
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+        </div>
+        <div class="row">
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+        </div>
+        <div class="row">
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+          <div class="col-2 col-md-2 min m-1"><h4>Kevin the Minion</h4></div>
+        </div>
       </div>
     </section>
     <section id="contact" class="contact">
       <div class="row">
-        <div class="col-6 left">
+        <div class="col-12 col-md-6 left">
           <h2>Do u have a question?</h2>
           <h1>let's meet !</h1>
         </div>
-        <div class="col-6 right">
+        <div class="col-12 col-md-6 right">
           <input type="text" placeholder="Name" required />
           <input type="text" placeholder="Surname" required /><br />
           <select required>
-            <option value="+994">+994</option>
+            <option value="+994" hidden>+994</option>
             <option value="050">050</option>
             <option value="051">051</option>
             <option value="055">055</option>
@@ -132,7 +140,7 @@
           </select>
           <input type="text" placeholder="XXX-XX-XX" class="number" /><br />
           <select class="profession" required>
-            <option value="Select your profession">
+            <option value="Select your profession" hidden>
               Select your profession
             </option>
             <option value="fed">Front-end Developer</option>

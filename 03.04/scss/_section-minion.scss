@@ -8,53 +8,55 @@
       content: "";
       display: block;
       width: 150px;
-      border: 1px solid yellow;
+      border: 2px solid yellow;
       margin-top: 5px;
+      margin-bottom: 10px;
     }
   }
-  .mini {
-    gap: 10px;
-    .min {
+  .row {
+    margin-left: 2%;
+    .row {
       flex-wrap: nowrap;
-      font-size: 28px;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 200px;
-      width: 150px;
-      border: transparent;
-      &:hover {
-        animation: rotate 2s;
-        border: 1px dashed black;
-        h4 {
-          display: none;
-        }
-      }
-      &:nth-child(odd) {
-        background-color: blueviolet;
+      .min {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 210px;
+        width: 220px;
+        border: transparent;
         &:hover {
-          background-image: url(../images/minion1.png);
-          background-size: cover;
-          background-repeat: no-repeat;
+          animation: rotate 2s;
+          border: 1px dashed black;
+          h4 {
+            display: none;
+          }
         }
-      }
-      &:nth-child(even) {
-        background-color: green;
-        &:hover {
-          background-image: url(../images/minion2.png);
-          background-size: cover;
+        &:nth-child(odd) {
+          background-color: blueviolet;
+          &:hover {
+            background-image: url(../images/minion1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
         }
-      }
-      @keyframes rotate {
-        0% {
-          transform: rotateX(0deg);
+        &:nth-child(even) {
+          background-color: green;
+          &:hover {
+            background-image: url(../images/minion2.png);
+            background-size: cover;
+          }
         }
-        50% {
-          transform: rotateX(90deg);
-        }
-        100% {
-          transform: rotateX(0deg);
+        @keyframes rotate {
+          0% {
+            transform: rotateX(0deg);
+          }
+          50% {
+            transform: rotateX(90deg);
+          }
+          100% {
+            transform: rotateX(0deg);
+          }
         }
       }
     }
